@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled2/login.dart';
 
 void main() => runApp(Start());
 
@@ -7,8 +8,13 @@ class Start extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Cafe-X',
+      initialRoute: '/',
+      routes: {
+        '/':(context)=> Loginscreen(),
+        '/Mainpage':(context)=>Home()
+      },
       //Mention the routes here
-      home: Home(),
+      //home: Home(),
     );
   }
 }
